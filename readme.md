@@ -10,7 +10,7 @@ It was inspired by [Andrew Bliss component](https://medium.com/javascript-in-pla
 * ReactJS  
     Back-bone of the project  
 * **Material UI**  
-    For the SvgIcon UI components
+    For the Material UI dialog components
 
 
 
