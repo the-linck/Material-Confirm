@@ -8,9 +8,9 @@ It was inspired by [Andrew Bliss component](https://medium.com/javascript-in-pla
 ## Dependencies
 
 * ReactJS  
-    Back-bone of the project  
+	Back-bone of the project  
 * **Material UI**  
-    For the Material UI dialog components
+	For the Material UI dialog components
 
 
 
@@ -52,22 +52,22 @@ import React from "react";
 import ConfirmDialog from "./ConfirmDialog";
 
 const CustomComponent = (props) => {
-    // Could come from props or context
-    const [disabled, setDisabled] = useState(false);
-    const [open, setOpen] = useState(false);
+	// Could come from props or context
+	const [disabled, setDisabled] = useState(false);
+	const [open, setOpen] = useState(false);
 
-    const CloseDialog = () => setOpen(false);
-    const SaveChanges = () => {
-        console.debug("Saving changes.");
+	const CloseDialog = () => setOpen(false);
+	const SaveChanges = () => {
+		console.debug("Saving changes.");
 
-        setOpen(false);
-    };
-    /// ...
+		setOpen(false);
+	};
+	/// ...
 
-    return [
-        /// Rest of the component layout
+	return [
+		/// Rest of the component layout
 
-        <ConfirmDialog
+		<ConfirmDialog
 			closeDialog={CloseDialog}
 			disabled={disabled}
 			onConfirm={SaveChanges}
@@ -77,7 +77,7 @@ const CustomComponent = (props) => {
 		>{
 			"Do you wish to save the current changes."
 		}</ConfirmDialog>
-    ];
+	];
 };
 export CustomComponent;
 ```
