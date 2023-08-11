@@ -9,6 +9,8 @@ It was inspired by [Andrew Bliss component](https://medium.com/javascript-in-pla
 
 * ReactJS  
 	Back-bone of the project  
+* Typescript  
+* TSX (JSX + Typescript)  
 * **Material UI**  
 	For the Material UI dialog components
 
