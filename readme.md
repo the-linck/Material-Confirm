@@ -1,4 +1,4 @@
-# Material Confirm
+# Material Confirm (TypeScript version)
 
 Stateless confirmation dialog component, made to be simple to use.  
 It was inspired by [Andrew Bliss component](https://medium.com/javascript-in-plain-english/creating-a-confirm-dialog-in-react-and-material-ui-3d7aaea1d799).

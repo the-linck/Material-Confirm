@@ -6,36 +6,25 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 
-/**
- * Material-ui types.
- * 
- * @typedef {import('@material-ui/core/Button').default} Button
- * @typedef {import('@material-ui/core/Dialog').default} Dialog
- * @typedef {import('@material-ui/core/DialogActions').default} DialogActions
- * @typedef {import('@material-ui/core/DialogContent').default} DialogContent
- * @typedef {import('@material-ui/core/DialogTitle').default} DialogTitle
- */
-/**
- * @typedef {{
-    cancelLabel?: string,
-    children: JSX.Element|JSX.Element[],
-    closeDialog: function() : void,
-    confirmLabel?: string,
+
+
+interface ConfirmDialogProps {
+	cancelLabel?: string,
+	children: JSX.Element,
+	closeDialog: Function,
+	confirmLabel?: string,
 	disabled: boolean,
-    onConfirm: function() : void,
-    open: boolean,
-    title: string
- }} ConfirmDialogProps
- */
-
+	onConfirm: Function,
+	open: boolean,
+	title: string
+}
 
 /**
- * Stateless confirmation dialog component, inspired by Andrew Bliss component.
+ * Diálogo de confirmação genérico, baseado no componente de Andrew Bliss.
  * 
  * @see https://medium.com/javascript-in-plain-english/creating-a-confirm-dialog-in-react-and-material-ui-3d7aaea1d799
- * @param {ConfirmDialogProps} props
  */
-const ConfirmDialog = (props) => {
+const ConfirmDialog = (props : ConfirmDialogProps) => {
 	const Close = () => {
 		if (props.closeDialog) {
 			props.closeDialog();
